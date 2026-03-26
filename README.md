@@ -301,8 +301,8 @@ The `Screen` function in Psychtoolbox is currently **not licensed** on this mach
 The original Unicorn Recorder CSV training files (15 Hz and 20 Hz recordings from Dhruv's machine) are **not present** on this machine. The paths pointed to:
 
 ```
-C:\Users\maxpo\OneDrive\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Sample data\14 Hz\UnicornRecorder_16_01_2026_16_24_340.csv
-C:\Users\maxpo\OneDrive\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Sample data\18 Hz\UnicornRecorder_16_01_2026_16_27_410.csv
+C:\SSVEP_Demo_Sel\openBCI_game\Processing\SampleData\UnicornRecorder_16_01_2026_16_24_340.csv
+C:\SSVEP_Demo_Sel\openBCI_game\Processing\SampleData\UnicornRecorder_16_01_2026_16_27_410.csv
 ```
 
 **Status:** `BCI_main.m` now auto-generates synthetic SSVEP data if these files are missing (saved to `Processing/SampleData/`). However, the following scripts still reference the old paths and will fail:
@@ -330,7 +330,7 @@ The full game pipeline (`demo_v1.m` → `BlockType.m` → `GameMain.m` → `Tria
 
 ## Hardcoded Paths
 
-All paths have been updated to the current machine (`C:\Users\maxpo\...`). If you move the project or switch machines, update these files:
+All paths have been updated to the current machine (`C:\SSVEP_Demo_Sel\.`). If you move the project or switch machines, update these files:
 
 | Script | What the path points to |
 |---|---|
