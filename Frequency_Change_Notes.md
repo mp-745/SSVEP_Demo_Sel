@@ -2,7 +2,7 @@
 
 ## Background
 
-The original SSVEP system (developed by Dhruv) used stimulus frequencies of **14 Hz** (left/rotate) and **18 Hz** (right/select). These frequencies were chosen somewhat arbitrarily as a reasonable pair within the SSVEP-responsive range, with enough separation for the FFT-based classifier to distinguish them.
+The original SSVEP system used stimulus frequencies of **14 Hz** (left/rotate) and **18 Hz** (right/select). These frequencies were chosen somewhat arbitrarily as a reasonable pair within the SSVEP-responsive range, with enough separation for the FFT-based classifier to distinguish them.
 
 ## The Problem: Refresh Rate Mismatch
 
