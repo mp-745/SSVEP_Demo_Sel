@@ -12,7 +12,7 @@ The system presents two flickering stimuli (15 Hz and 20 Hz), records EEG from o
 
 1. In MATLAB, `cd` to the Presentation folder and run `BCI_main`:
    ```matlab
-   cd('C:\Users\maxpo\OneDrive\Documents\SSVEP_Demo_Sel\SSVEP_Demo_Sel\openBCI_game\Presentation')
+   cd('C:\SSVEP_Demo_Sel\openBCI_game\Presentation')
    BCI_main
    ```
 2. By default, `MODE = 'csv'` — the system trains an SVM on two CSV files, launches the Psychtoolbox knob display, and plays back a CSV recording as if it were a live EEG stream. No Python, no LSL, no headset required.
@@ -112,7 +112,7 @@ Most scripts use Psychtoolbox (PTB) for timing-accurate visual presentation. `BC
 |---|---|
 | `InitMain.m` | Sets SSVEP flicker frequencies (15 Hz left, 20 Hz right), disables PTB sync tests, sets trial duration to 10 s. |
 | `StimuliInit.m` | Opens a fullscreen PTB window on the last monitor. Computes screen center, refresh rate, flip interval, priority level. Defines color constants (black, white, gray, yellow). |
-| `InitPresentationPaths.m` | Defines directory paths for the game folder and shared file locations (feedback file, accuracy file). Hardcoded to `C:\Users\maxpo\OneDrive\Documents\SSVEP_Demo_Sel\SSVEP_Demo_Sel\openBCI_game`. |
+| `InitPresentationPaths.m` | Defines directory paths for the game folder and shared file locations (feedback file, accuracy file). Hardcoded to `C:\SSVEP_Demo_Sel\openBCI_game`. |
 | `InitPPort.m` | Initializes a serial port connection (COM4, 115200 baud) for parallel-port-style EEG triggers. |
 | `Stimuli_game.m` | Creates all game objects: 30 collectible yellow dots, 4 red obstacles (100 px), 1 magenta enemy ship (50 px), 1 white player ship (50 px, speed 4 px/frame). Positions objects across 2 screen heights for scrolling. |
 | `Stimuli_grating.m` | Positions the two SSVEP stimulus circles (100 px radius) in the bottom-left and bottom-right corners with 25 px margins. Also defines the score display polygon (170x50 px, centered). |
