@@ -1,0 +1,3 @@
+date_str = datestr(now, 'yyyy_mm_dd_hh_MM_ss');
+save_fname = sprintf('Recorded_Data(two_stim)_%s_(%d_%d).mat', date_str, EEG_PARAMS.SSVEP_freq(1), ...
+    EEG_PARAMS.SSVEP_freq(2));
